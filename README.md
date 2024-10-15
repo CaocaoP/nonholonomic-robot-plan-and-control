@@ -23,7 +23,7 @@ To run the simulation and plot the results, follow these steps:
 1. **Add the Project Path**:  
    Add the `project_tmu` folder and all its subfolders to the MATLAB path to ensure all files can be accessed correctly:
    ```matlab
-   addpath(genpath('path_to_project_tmu'))
+   addpath(genpath('project_tmu'))
    
 2.**Install Dependencies:**
 Ensure you have the necessary toolboxes installed in MATLAB, such as:
