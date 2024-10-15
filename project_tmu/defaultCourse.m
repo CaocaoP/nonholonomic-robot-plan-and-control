@@ -23,7 +23,7 @@ elseif courseNum == 1
     ellipse.yc = 4.0;
     constraints.ellipses{1} = ellipse;
 
-    start  = [pi/2, 1.00, 1.00];
+    start  = [pi/2, 1.00, 0.50];
     target = [0.00, 14.0, 14.0];
 
 elseif courseNum == 2

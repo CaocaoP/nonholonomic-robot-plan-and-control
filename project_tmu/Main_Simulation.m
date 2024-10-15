@@ -11,13 +11,13 @@ clear all
 close all
 
 %% Create the course to test on
-% Course 1: 0 obstacle
-% Course 2: 1 obstacle
-% Course 3: 3 obstacles (with corner)
-% Course 4: 5 obstacles (with corner)
-% Course 5: 12 obstacles (uniformly distributed)
+% Course 0: 0 obstacle
+% Course 1: 1 obstacle
+% Course 2: 3 obstacles (with corner)
+% Course 3: 5 obstacles (with corner)
+% Course 4: 12 obstacles (uniformly distributed)
 
-courseNum = 4;
+courseNum = 2;
 testCourse = defaultCourse(courseNum);
 
 %% Define all the selectors
@@ -31,12 +31,12 @@ igSelect = 'astar';
 % 'sparse' - Sparse nonlinear optimisation
 % 'condense' - Condense nonlinear optimisation
 % 'off' - No trajectory planning (MPC only)
-tpSelect = 'sparse';
+tpSelect = 'off';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Selector of the controller
 % 'mpc' - Model predictive controller
 % 'nlc' - Nonlinear feedforward + feedback controller
-ctrlSelect = 'nlc';
+ctrlSelect = 'mpc';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Call the setup function

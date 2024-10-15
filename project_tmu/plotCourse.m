@@ -37,16 +37,16 @@ xlim( xl );
 ylim( yl );
 
 %% Add the starting point
-plot( param.start(2), param.start(3), 'mo' )
+plot( param.start(2), param.start(3), 'mo' );
 quiver(param.start(2), param.start(3), ...
-    0.05*cos(param.start(1)), 0.05*sin(param.start(1)), ...
+    0.9*cos(param.start(1)), 0.9*sin(param.start(1)), ...
     'm', 'LineWidth', 2, 'MaxHeadSize', 5);
 
 
 %% Add the target point (with epsilon size)
-plot( param.target(2), param.target(3), 'm*' )
+plot( param.target(2), param.target(3), 'm*' );
 quiver(param.target(2), param.target(3), ...
-    0.05*cos(param.target(1)), 0.05*sin(param.target(1)), ...
+    0.9*cos(param.target(1)), 0.9*sin(param.target(1)), ...
     'm', 'LineWidth', 2, 'MaxHeadSize', 5);
 
 

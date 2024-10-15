@@ -37,7 +37,7 @@ space = stateSpaceSE2;
 space.WeightXY = 1;
 space.WeightTheta = 0.5;
 
-%% Creat a validatorOccupancyMap
+%% Creat a validatorOccupancyhe Map
 validator = validatorOccupancyMap(space);
 validator.Map = map;
 validator.XYIndices = [1,2];
@@ -52,6 +52,8 @@ startLoc = [param.start(2:3) param.start(1)];
 goalLoc = [param.target(2:3) param.target(1)];
 
 refpath = plan(planner,startLoc,goalLoc,SearchMode='exhaustive'); 
+
+figure;
 show(planner);
 
 %% Interpolate path to obtain N evenly spaced points

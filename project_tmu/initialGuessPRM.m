@@ -48,16 +48,6 @@ while isempty(path)
     path = findpath(prm, startLoc, goalLoc);
 end
 
-% % Display the map again with the path
-% figure;
-% show(map);
-% hold on;
-% plot(startLoc(1), startLoc(2), 'go', 'MarkerSize', 10, 'LineWidth', 2);
-% plot(goalLoc(1), goalLoc(2), 'ro', 'MarkerSize', 10, 'LineWidth', 2);
-% plot(path(:,1), path(:,2), 'b-', 'LineWidth', 2);
-% title('PRM Path on Map');
-% hold off;
-
 %% Interpolate path to obtain N evenly spaced points
 N = param.N + 1; % Number of points for the new path P
 
